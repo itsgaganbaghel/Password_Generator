@@ -12,6 +12,13 @@
     height: 100vh;
     width: 100vw;
 }
+iframe{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 0%;
+    left: -8%;
+}
 
 h1{
     font-size: 2rem;
@@ -51,9 +58,29 @@ h1{
     padding: .5rem;
 }
 .slider{
+    appearance: none;
     width: 100%;
-    padding: .5rem;
+    height: 0.75rem;
+    /* padding: .5rem; */
     opacity: .7;
+    background-color: blueviolet;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    height: 2rem;
+    width: 2rem;
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px rgb(2555, 229, 61 , 0.50);
+    transition: all 100ms ease-in;
+}
+.slider:focus{
+    outline: 3px solid yellow;
 }
 
 .slider:hover{
@@ -105,6 +132,10 @@ p{
 [data-copyMsg]{
     display:  none;
     position: absolute;
+    padding: 0.5rem;
+    border-radius: 50% ;
+    background-color: violet;
+    color: white;
 }
 .active{
     transform: translateY(-27px) scale(1.1);
