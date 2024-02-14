@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.content{
+    width: 20%;
+    padding: 1.5rem 1rem;
+    border: 2px solid #ccc;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+.display-container{
+    /* border: 2px solid #ccc; */
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    position: relative;
+}
+#password{
+    width: 80%;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
+[data-copy-btn]{
+    width: 20%;
+    cursor: pointer;
+}
+
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+}
+.slider{
+    width: 100%;
+    padding: .5rem;
+    opacity: .7;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+label{
+    font-size: 1.1rem;
+    margin:0 .5rem;
+    /* line-height: 1rem; */
+    font-weight: 600;
+}
+
+.options{
+    width: 20px;
+    height: 20px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+.strength-container{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+[data-indicator] {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: gainsboro;
+    border-radius: 50%;
+}
+
+p{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.generateBtn{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    background-color:chartreuse;
+}
+
+[data-copyMsg]{
+    display:  none;
+    position: absolute;
+}
+.active{
+    transform: translateY(-27px) scale(1.1);
+    transition: all 1s ease-in-out;
+    /* background-color: black; */
+    /* position: absolute; */
+    display: block;
+    z-index: 2;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
